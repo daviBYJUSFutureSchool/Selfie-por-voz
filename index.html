@@ -1,0 +1,43 @@
+<html lang="pt-br"> 
+    <head>
+        
+        <title> Selfie por voz</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <center>
+            <a href="" id="link" download="minhaselfie.png"></a>
+            <h1>
+                site Selfie de Voz
+            
+            <img id="logo_img" src="WIN_20240130_20_13_45_Pro.jpg">
+        </h1>
+            <h4 style="color:aqua;">Pressione permitir assim que o pop-up for exibido. Depois, forneça um comando de voz.</h4>
+            
+            <div class="form-group">
+                <h3>
+                    Diga "tire minha selfie"
+                </h3>
+                <label>Sua saída de voz:
+                </label>
+                <textarea class="form-control" id="textbox" readonly="true"></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="start()">Iniciar</button>
+                <p>Pressione o botão</p>
+                <label>Sua webcam: </label>
+                <div id="camera"></div>
+                <br>
+                <label> Sua selfie será exibida aqui: </label>
+                <div id="result" ></div>
+            </div>
+        </center>
+      </div>
+      <script src="main.js"></script>
+
+    </body>
+</html>
